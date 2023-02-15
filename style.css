@@ -1,0 +1,131 @@
+.head-line {
+   margin-top: 1em;
+   display: flex;
+   justify-content: center;
+}
+.head-line svg {
+   width: 430px;
+}
+
+.menus {
+   margin-top: 1em;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   border-top: 1px solid #ebebeb;
+   border-bottom: 4px double #000;
+}
+
+.menus button {
+   border: none;
+   background-color: #fff;
+   margin: 5px;
+}
+.menus button:hover {
+   background-color: beige;
+}
+.news-img-size {
+   max-width: 100%;
+   max-height: 250px;
+}
+.news {
+   border-bottom: 2px solid #000;
+}
+
+.search-box {
+   margin: 10px;
+}
+
+#search-input {
+   display: inline;
+   width: 120px;
+   transition: all 0.5s;
+}
+#search-button {
+   border: none;
+   background-color: #fff;
+}
+#search-button:hover {
+   background-color: thistle;
+   border-radius: 5px;
+   color: white;
+}
+#search-input {
+   border: none;
+   border-bottom: 1px solid black;
+}
+
+.side-navi {
+   background-color: seashell;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   transition: all 0.5s;
+
+   overflow-x: hidden;
+   width: 0;
+
+   z-index: 999;
+}
+.side-button {
+   display: flex;
+   flex-direction: column;
+   margin-top: 50px;
+}
+.close-button {
+   border: none;
+   background-color: transparent;
+   font-size: 30px;
+   position: absolute;
+   right: 20px;
+   transition: all 1s;
+}
+.close-button:hover {
+   transform: rotate(360deg);
+}
+
+.side-button button {
+   border: none;
+   background-color: transparent;
+   width: 200px;
+   padding: 10px;
+}
+.side-button button:hover {
+   background-color: papayawhip;
+   font-weight: bold;
+}
+.open-box button {
+   border: none;
+   background-color: transparent;
+   font-size: 30px;
+   opacity: 0;
+}
+.alret-box {
+   margin-top: 30px;
+}
+.pagination {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+}
+@media screen and (max-width: 63rem) {
+   .menus {
+      display: none;
+   }
+   .open-box button {
+      opacity: 1;
+   }
+   .search-box {
+      position: absolute;
+      top: 0;
+      right: 100px;
+   }
+   .alret-box {
+      margin-top: 30px;
+   }
+   .head-line {
+      border-bottom: 4px double #000;
+      padding: 20px;
+   }
+}
